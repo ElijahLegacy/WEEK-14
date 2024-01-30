@@ -100,10 +100,11 @@ app.delete('/collection/:collectionName/:id', (req, res, next) => {
     )
 })
 
+const port = process.env.PORT || 3000
+app.listen(port)
+
 // cURL - Client URL
 app.listen(3000, () => {
     console.log('express is running on port 3000')
 })
 
-const port = process.env.PORT || 3000
-app.listen(port)
